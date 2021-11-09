@@ -5,7 +5,7 @@ const Product = (props) => {
   const { product } = props;
   return (
     <div>
-      <div key={product._id} class="card">
+      <div key={product._id} className="card">
         <Link to={`/product/${product._id}`}>
           <img className="medium" src={product.image} alt={product.name} />
         </Link>
