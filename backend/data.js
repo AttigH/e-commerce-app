@@ -1,16 +1,17 @@
 import bcrypt from "bcryptjs";
+
 const data = {
   users: [
     {
       name: "Hamza",
       email: "admin@admin.com",
-      password: bcrypt.hashSync("1234", 8),
+      password: bcrypt.hashSync("admin", 8),
       isAdmin: true,
     },
     {
-      name: "attig",
+      name: "Attig",
       email: "user@user.com",
-      password: bcrypt.hashSync("1234", 8),
+      password: bcrypt.hashSync("user", 8),
       isAdmin: false,
     },
   ],
@@ -22,7 +23,7 @@ const data = {
       price: 120,
       countInStock: 10,
       brand: "Nike",
-      rating: 2.5,
+      rating: 4.5,
       numReviews: 10,
       description: "high quality product",
     },
@@ -44,7 +45,7 @@ const data = {
       price: 220,
       countInStock: 0,
       brand: "Lacoste",
-      rating: 3.8,
+      rating: 4.8,
       numReviews: 17,
       description: "high quality product",
     },
@@ -64,7 +65,7 @@ const data = {
       category: "Pants",
       image: "/images/p5.jpg",
       price: 65,
-      countInStock: 0,
+      countInStock: 5,
       brand: "Puma",
       rating: 4.5,
       numReviews: 10,
