@@ -284,12 +284,13 @@ img.large {
   position: absolute;
   display: none;
   right: 0;
-  min-width: 12rem;
-  padding: 1rem;
+  min-width: 10rem;
+  height: 4rem;
+  padding: 0.5rem;
   z-index: 1;
   background-color: #203040;
   margin: 0;
-  margin-top: 0.4rem;
+  margin-top: -0.2rem;
   border-radius: 0.5rem;
 }
 .dropdown:hover .dropdown-content {
