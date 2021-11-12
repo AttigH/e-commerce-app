@@ -21,7 +21,8 @@ const CartScreen = (props) => {
     dispatch(removeFromCart(id));
   };
   const checkoutHandler = () => {
-    navigate("/signin?redirect=shipping");
+    //navigate("/signin?redirect=shipping");
+    navigate("/shipping");
   };
   return (
     <div className="row top">
