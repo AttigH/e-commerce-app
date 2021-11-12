@@ -14,6 +14,7 @@ import PlaceOrderScreen from "./screens/PlaceOrderScreen";
 function App() {
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart);
+
   const userSignIn = useSelector((state) => state.userSignIn);
   const { userInfo } = userSignIn;
   const { cartItems } = cart;
@@ -30,7 +31,7 @@ function App() {
             </Link>
           </div>
           <div>
-            <Link to="cart.html">
+            <Link to="/cart">
               Cart
               {cartItems.length > 0 && (
                 <span className="badge"> {cartItems.length}</span>
