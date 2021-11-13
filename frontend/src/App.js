@@ -11,6 +11,7 @@ import ShippingAddressScreen from "./screens/ShippingAddressScreen";
 import PaymentScreen from "./screens/PaymentScreen";
 import PlaceOrderScreen from "./screens/PlaceOrderScreen";
 import OrderScreen from "./screens/OrderScreen";
+import OrderHistoryScreen from "./screens/OrderHistoryScreen";
 
 function App() {
   const dispatch = useDispatch();
@@ -45,6 +46,9 @@ function App() {
                 </Link>
                 <ul className="dropdown-content">
                   <li>
+                    <Link to="/orderhistory">Order History</Link>
+                  </li>
+                  <li>
                     <Link to="/" onClick={signoutHandler}>
                       Sign Out
                     </Link>
@@ -65,6 +69,7 @@ function App() {
             <Route path="/payment" element={<PaymentScreen />} />
             <Route path="/placeorder" element={<PlaceOrderScreen />} />
             <Route path="/order/:id" element={<OrderScreen />} />
+            <Route path="/orderhistory" element={<OrderHistoryScreen />} />
             <Route path="/signin" element={<SignInScreen />} />
             <Route path="/register" element={<RegisterScreen />} />
             <Route path="/" element={<HomeScreen />} exact></Route>
